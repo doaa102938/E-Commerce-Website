@@ -1,0 +1,190 @@
+.TopCart {
+    background-image: url('/public/BackgroundShop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.TitleCart {
+    font-size: 45px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.Container {
+    display: flex;
+    padding: 40px;
+    column-gap: 20px;
+}
+
+.shoppingCart {
+    width: 70%;
+}
+
+.Headercart {
+    background-color: #F9F1E7;
+    display: flex;
+    column-gap: 10px;
+    padding: 10px;
+}
+
+.Headercart>label {
+    width: 20%;
+    text-align: center;
+
+}
+
+.CartItem {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px;
+
+}
+
+.CartItem>p,
+.CartItem>button {
+    width: 20%;
+    text-align: center;
+}
+
+.CartItemImage {
+    width: 70px;
+    height: 70px;
+}
+
+.imgAndName {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+}
+
+.cartname {
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    height: 30px;
+    color: #9F9F9F;
+    font-weight: 400;
+}
+
+.Price {
+    color: #9F9F9F;
+    font-weight: 500;
+}
+
+.quantity {
+    font-weight: 500;
+}
+
+.quantity span {
+    padding: 10px 15px;
+    border: 1px solid #9F9F9F;
+    border-radius: 5px;
+}
+
+.btnRemove,
+.CheckoutButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.CheckoutButton {
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 70px;
+}
+
+.CartCheckout {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F1E7;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    row-gap: 20px;
+    padding-bottom: 50px;
+    height: 250px;
+}
+
+.TotalDiv {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.CartTotals {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.PriceCheckout {
+    color: #B88E2F;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Deletelabel {
+    color: #F9F1E7;
+}
+
+.Headercart>label {
+    font-weight: 600;
+}
+
+.TotalPrice {
+    font-weight: 500;
+}
+
+.emptyCart {
+    font-weight: 500;
+    margin: 20px;
+    width: 100%;
+}
+
+.emptyCart a {
+    color: #B88E2F;
+}
+
+.CartEmpty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .Container {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .shoppingCart {
+        width: 100%;
+    }
+
+    .cartname {
+        display: none;
+    }
+
+    .CartCheckout {
+        width: 90%;
+
+    }
+
+}

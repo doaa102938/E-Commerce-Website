@@ -1,0 +1,87 @@
+nav {
+    display: flex;
+    padding: 20px 50px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; */
+}
+
+
+
+#LogoDiv {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+#TextLogo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    column-gap: 60px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+
+}
+
+#CartDiv {
+    width: 150px;
+    position: relative;
+}
+
+#CartDiv button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.CartNum {
+    font-weight: 500;
+    position: absolute;
+    right: 105px;
+    background-color: #F9F1E7;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        padding: 20px 10px;
+        justify-content: center;
+        column-gap: 20px;
+    }
+
+    #LogoDiv {
+        column-gap: 0;
+    }
+
+    ul {
+        column-gap: 20px;
+    }
+
+    .CartNum {
+        right: 5px;
+    }
+
+}

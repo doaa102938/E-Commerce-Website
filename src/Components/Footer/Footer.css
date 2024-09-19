@@ -1,0 +1,133 @@
+.FeatureSection {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FAF3EA;
+    height: 250px;
+}
+
+.Feature {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.FeatureSectionText {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.FeatureText1 {
+    color: #242424;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.FeatureText2 {
+    color: #898989;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.FooterDown {
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-between;
+    margin: 0 50px;
+
+}
+
+.FooterTitle {
+    color: #9F9F9F;
+    font-weight: 500;
+}
+
+.Furnirodiv {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.Address {
+    color: #9F9F9F;
+}
+
+.LinkSection ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.HelpSection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.HelpSection label {
+    font-weight: 500;
+}
+
+.EnterEmail {
+    color: #9F9F9F;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-right: 20px;
+}
+
+.btnSubscribe {
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+}
+
+.CopyRight {
+    margin: 0 50px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .FeatureSection {
+        flex-direction: column;
+        height: 500px;
+        row-gap: 20px;
+        padding: 40px 0;
+        align-items: center;
+
+    }
+
+
+
+    .FooterDown {
+        padding: 40px 0;
+        margin: 10px;
+        justify-content: space-between;
+        width: 70%;
+
+
+    }
+
+    .FooterDown div {
+        width: 25%;
+    }
+
+    .CopyRight {
+        margin: 10px;
+    }
+
+    .LinkSection ul {
+        row-gap: 50px;
+
+    }
+
+
+    .EnterEmail {
+        margin-right: 0;
+    }
+
+    .NewsletterSection {
+        display: none;
+    }
+
+}
