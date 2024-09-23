@@ -1,8 +1,8 @@
 import './ShoppingCart.css'
-import close from '/public/Bag.png'
-import DeleteProduct from "/public/deleteProduct.png"
+import close from '/Bag.png'
+import DeleteProduct from "/deleteProduct.png"
 import useShoppingCartStore from '../../Store/ShoppingCart'
-import EmptyCart from "/public/Emptycart.webp"
+import EmptyCart from "/Emptycart.webp"
 import { Link } from 'react-router-dom'
 function ShoppingCart({ closecart }) {
     const { cartItems, removeFromCart } = useShoppingCartStore()

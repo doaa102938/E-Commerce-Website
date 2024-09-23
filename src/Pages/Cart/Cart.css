@@ -187,4 +187,13 @@
 
     }
 
+    .Headercart>label {
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .Headercart {
+        padding: 10px 5px;
+    }
+
 }

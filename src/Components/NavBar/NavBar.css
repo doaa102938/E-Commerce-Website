@@ -4,10 +4,7 @@ nav {
     background-color: white;
     align-items: center;
     justify-content: space-between;
-    /* position: fixed;
-    top: 0;
-    right: 0;
-    left: 0; */
+
 }
 
 
@@ -64,24 +61,67 @@ a {
     top: 10px;
 }
 
+.menuToggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+ul.menu-open {
+    display: none;
+
+}
+
+
 @media only screen and (max-width: 600px) {
 
     nav {
         padding: 20px 10px;
         justify-content: center;
-        column-gap: 20px;
+        column-gap: 40px;
+        align-items: center;
+    }
+
+    #CartDiv {
+        width: 0;
     }
 
     #LogoDiv {
         column-gap: 0;
     }
 
-    ul {
-        column-gap: 20px;
+    .CartNum {
+        right: -40px;
     }
 
-    .CartNum {
-        right: 5px;
+    nav ul {
+        display: none;
+    }
+
+    ul.menu-open {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        padding: 20px 50px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        align-items: start;
+        row-gap: 40px;
+    }
+
+    .menuToggle {
+        display: block;
+    }
+
+
+    .closeMenu {
+        width: 20px;
+
     }
 
 }

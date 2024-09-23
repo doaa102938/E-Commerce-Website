@@ -140,8 +140,8 @@
 
     .ProductItem {
 
-        width: 200px;
-        height: 400px;
+        width: 150px;
+        height: 500px;
     }
 
     .ProductImage {
@@ -150,8 +150,9 @@
     }
 
     .addToCartButton {
-        width: 150px;
+        width: 100px;
         padding: 5px;
+        font-size: 12px;
     }
 
     .TitleAndPrice {

@@ -1,6 +1,9 @@
 import './NavBar.css'
 import { Link } from "react-router-dom";
-import IconCart from '../../../public/Vector.png'
+import IconCart from '/Vector.png'
+import IconMenu from '/menu.svg'
+import close from "/close.png"
+
 import Logo from "/public/Logo.png"
 import useShoppingCartStore from '../../Store/ShoppingCart';
 import ShoppingCart from '../ShoppingCart/ShoppingCart';
@@ -11,6 +14,8 @@ function NavBar() {
     const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
 
     const [isCartOpen, setIsCartOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+
 
     function toggleCart() {
         setIsCartOpen(!isCartOpen);
@@ -19,25 +24,47 @@ function NavBar() {
         setIsCartOpen(false)
     }
 
+    function toggleMenu() {
+        let newMenuValue = !menuOpen
+        setMenuOpen(newMenuValue);
+
+    }
+    function closemenu() {
+        setMenuOpen(false)
+    }
+
+
     return (
         <>
             <nav>
+
+                <button className="menuToggle" onClick={toggleMenu}>
+                    <img src={IconMenu} alt="menu" />
+                </button>
+
+
                 <div id='LogoDiv'>
                     <img src={Logo} alt="logo" />
                     <label id='TextLogo'> Furniro</label>
                 </div>
 
 
-                <ul>
+                <ul className={menuOpen ? 'menu-open' : 'menu-closed'} >
+
+                    {menuOpen && (
+
+                        <img src={close} className="closeMenu" onClick={closemenu} alt="Close Menu" />
+
+                    )}
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/" onClick={closemenu}>Home</Link>
                     </li>
 
                     <li>
-                        <Link to="/shop">Shop</Link>
+                        <Link to="/shop" onClick={closemenu} >Shop</Link>
                     </li>
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/contact" onClick={closemenu}>Contact</Link>
                     </li>
 
                 </ul>
@@ -51,6 +78,8 @@ function NavBar() {
                     </div>
 
                 </div>
+
+
 
             </nav>
             {isCartOpen &&

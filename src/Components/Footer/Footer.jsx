@@ -47,7 +47,7 @@ function Footer() {
                 </div>
                 <div className='LinkSection'>
                     <h4 className='FooterTitle'>Links</h4>
-                    <ul>
+                    <ul className='linksFooter'>
                         <li>
                             <Link to="/">Home</Link>
                         </li>
