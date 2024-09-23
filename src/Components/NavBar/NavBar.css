@@ -39,12 +39,14 @@ a {
 #CartDiv {
     width: 150px;
     position: relative;
+    margin: 0;
 }
 
 #CartDiv button {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    margin: 0;
 }
 
 .CartNum {
@@ -59,6 +61,7 @@ a {
     align-items: center;
     border-radius: 15px;
     top: 10px;
+    margin: 0;
 }
 
 .menuToggle {
@@ -86,7 +89,7 @@ ul.menu-open {
     }
 
     #CartDiv {
-        width: 0;
+        width: 40px;
     }
 
     #LogoDiv {
@@ -94,7 +97,7 @@ ul.menu-open {
     }
 
     .CartNum {
-        right: -40px;
+        right: 0;
     }
 
     nav ul {
