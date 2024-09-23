@@ -135,7 +135,17 @@ form textarea {
 
     .header {
         text-align: start;
-        width: 400px;
+        width: 350px;
+    }
+
+    .headerTitle {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .HearderPrag {
+        width: 300px;
     }
 
     .ContactUs {
