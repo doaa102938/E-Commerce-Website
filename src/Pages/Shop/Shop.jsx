@@ -23,32 +23,23 @@ function Shop() {
 
 
     useEffect(() => {
-        function CallApi() {
-            fetch("https://fakestoreapi.com/products")
-                .then((response) => {
-                    return response.json();
-                })
-                .then((finalResult) => {
-                    setShopProduct(finalResult);
 
+        const params = new URLSearchParams(location.search);
+        const selectedCategory = params.get("category");
+        const categoryEndpoint = selectedCategory
+            ? `https://fakestoreapi.com/products/category/${selectedCategory}`
+            : 'https://fakestoreapi.com/products';
 
-                    const params = new URLSearchParams(location.search);
-                    const selectedCategory = params.get("category");
+        fetch(categoryEndpoint)
+            .then((response) => response.json())
+            .then((data) => {
+                setShopProduct(data);
+                setFilteredProducts(data);
+            })
+            .catch((error) => {
+                console.error('Error fetching products:', error);
+            });
 
-
-                    if (selectedCategory) {
-                        const filtered = finalResult.filter(product => product.category === selectedCategory);
-                        setFilteredProducts(filtered);
-                    } else {
-                        setFilteredProducts(finalResult);
-                    }
-
-
-
-
-                });
-        }
-        CallApi();
     }, [location]);
 
     //button Add to cart

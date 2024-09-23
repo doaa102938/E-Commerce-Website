@@ -94,9 +94,13 @@
         row-gap: 20px;
         padding: 40px 0;
         align-items: center;
+        justify-content: space-around;
 
     }
 
+    .Feature {
+        width: 350px;
+    }
 
 
     .FooterDown {

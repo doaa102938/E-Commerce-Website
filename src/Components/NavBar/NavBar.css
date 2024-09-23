@@ -80,8 +80,9 @@ ul.menu-open {
     nav {
         padding: 20px 10px;
         justify-content: center;
-        column-gap: 40px;
+        column-gap: 30px;
         align-items: center;
+        box-sizing: border-box;
     }
 
     #CartDiv {
