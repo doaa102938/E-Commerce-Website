@@ -5,6 +5,8 @@
     height: 250px;
 }
 
+
+
 .Feature {
     display: flex;
     align-items: center;
@@ -98,6 +100,10 @@
 
     }
 
+    #Footer {
+        margin: 0;
+    }
+
     .Feature {
         width: 350px;
     }
@@ -105,19 +111,25 @@
 
     .FooterDown {
         padding: 40px 0;
-        margin: 10px;
+        margin: 0;
         justify-content: space-between;
-        width: 70%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
 
 
     }
 
     .FooterDown div {
-        width: 25%;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+
     }
 
     .CopyRight {
-        margin: 10px;
+        text-align: center;
     }
 
     .LinkSection ul {
@@ -125,13 +137,20 @@
 
     }
 
+    .LinkSection {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
 
     .EnterEmail {
-        margin-right: 0;
+        margin-right: 10px;
     }
 
     .NewsletterSection {
-        display: none;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 
 }
